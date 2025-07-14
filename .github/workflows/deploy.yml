@@ -33,3 +33,5 @@ jobs:
             sudo yum install -y nginx
             sudo systemctl start nginx
             sudo systemctl enable nginx
+            sudo rm -rf /usr/share/nginx/html/*
+            sudo cp -r /tmp/ec2_nginx/* /usr/share/nginx/html/
